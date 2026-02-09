@@ -26,6 +26,7 @@ jobs:
       run: |
         mkdir -p docs
         cp -r public/* docs/
+        cp .nojekyll docs/.nojekyll
         ls -la docs/
     
     - name: Deploy to GitHub Pages
